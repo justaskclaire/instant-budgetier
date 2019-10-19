@@ -1,9 +1,15 @@
-h1, #remaining {
-    font-family: 'Rock Salt';
-    font-size: 40px;
+html {
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 
-h4,h6 {
+h1, #remaining {
+    font-family: 'Rock Salt';
+    font-size: 50px;
+    border-bottom: 1px dotted black;
+    margin: auto;
+}
+
+h2,h4,h6 {
     font-family: 'Raleway';
 }
 
@@ -22,10 +28,26 @@ input[type=text] {
     font-family: 'Rock Salt';
     border: none;
     border-bottom: 2px solid black;
+    background: transparent;
 }
 
 button {
     font-family: 'Convergence';
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 0 9px #999;
+    border: 0;
+    background-color: white;
+    margin: 5px;
+    padding: 20px;
+}
+
+button:hover {background-color: #ECECEC}
+
+button:active {
+  background-color: #ECECEC;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .main {
