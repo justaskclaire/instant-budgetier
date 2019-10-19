@@ -1,0 +1,33 @@
+h1, #remaining {
+    font-family: 'Rock Salt';
+    font-size: 40px;
+}
+
+h4,h6 {
+    font-family: 'Raleway';
+}
+
+table {
+    font-family: 'Convergence';
+    font-size: 14px;
+    padding: 10px;
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+}
+
+input[type=text] {
+    font-family: 'Rock Salt';
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+button {
+    font-family: 'Convergence';
+}
+
+.main {
+    text-align: center;
+}
