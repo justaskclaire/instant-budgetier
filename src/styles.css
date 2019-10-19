@@ -20,6 +20,20 @@ table {
     margin: auto;
 }
 
+@media screen and (max-width: 600px) {
+    table {
+      font-size: 30px;
+    }
+
+    input {
+        font-size: 30px;
+    }
+
+    body {
+        font-size: 30px;
+    }
+}
+
 td {
     padding: 10px;
 }

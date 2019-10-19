@@ -1,17 +1,3 @@
-window.onload = function() {
-    var handwriting = document.getElementById('handwriting');
-    handwriting.style.fontFamily = this.getRandomHandwriting();
-    console.log("Handwriting: " + handwriting.style.fontFamily);
-
-    var sansserif = document.getElementById('sansserif');
-    sansserif.style.fontFamily = this.getRandomSansSerif();
-    console.log("Sans Serif: " + sansserif.style.fontFamily);
-
-    var serif = document.getElementById('serif');
-    serif.style.fontFamily = this.getRandomSerif();
-    console.log("Serif: " + serif.style.fontFamily);
-};
-
 function calculate() {
 
     // Get values from inputs
@@ -89,19 +75,4 @@ function setMonthlyTotalIncome(paycheck, freq) {
     console.log("Monthly Total Income:" + monthlyTotalIncome);
     
     return monthlyTotalIncome;
-}
-
-function getRandomHandwriting() {
-    var handwritingFonts = ['Rock Salt, cursive'];
-    return handwritingFonts[Math.floor(Math.random() * handwritingFonts.length)];
-}
-
-function getRandomSansSerif() {
-    var sansSerifFonts = ['Raleway'];
-    return sansSerifFonts[Math.floor(Math.random() * sansSerifFonts.length)];
-}
-
-function getRandomSerif() {
-    var serifFonts = ['Convergence'];
-    return serifFonts[Math.floor(Math.random() * serifFonts.length)];
 }
