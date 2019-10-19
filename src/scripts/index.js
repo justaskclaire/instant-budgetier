@@ -13,11 +13,29 @@ window.onload = function() {
 };
 
 function calculate() {
+
     // Get values from inputs
     var paycheck = document.getElementById('paycheck').value;
     var freq = getFrequencyValue();
     var bills = document.getElementById('bills').value;
     var savings = document.getElementById('savings').value.replace('%', '');
+
+    if (!paycheck) {
+        alert("Please enter your paycheck amount.");
+        return;
+    }
+    else if (!freq) {
+        alert("Please select a paycheck frequency.");
+        return;
+    }
+    else if (!bills) {
+        alert("Please enter your monthy bills amount.");
+        return;
+    }
+    else if (!savings) {
+        alert("Please enter what percentage of your income would you like to put in savings.")
+        return;
+    }
     
     console.log("Paycheck: " + paycheck);
     console.log("Frequency: " + freq);
